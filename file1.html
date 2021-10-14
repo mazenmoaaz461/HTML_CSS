@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- -----------------------Remark------------------  -->
+    <head>
+        <title>Study HTML here</title>
+        <link href="file2.css" rel="stylesheet">
+        <style>
+        body
+            {
+                background: rgb(100%,100%,10    0%);
+            }
+        mark
+            {
+                background-color: yellow;
+            }
+        p
+            {
+                border: 1px solid red;
+                /*font-weight: bold;
+                font-size:14pt;
+                font-family: fantasy;
+                */
+                font: bold 14pt Georgia, serif;
+            }
+     
+        #specialized{
+            font-style: bold;
+            color: darkmagenta;
+            }
+        .explanations{
+            color: darkgreen;
+            }
+        .lablenumbers{
+            color: dimgray;
+            }
+        .lablenames{
+            color: crimson;
+            font-size: larger;
+            }
+            li em
+            {
+                color: blue;
+
+            }   
+            .container2
+            {
+                display: flex;
+                flex-direction: row;
+                align-items: end;
+                justify-content: space-evenly;
+                border: 2px solid yellow;
+            }
+            .box5
+            {
+                font-size: 54px;    
+                /*
+                width: 250px;
+                height: 150px;*/
+                border: 1px solid red;
+                
+            }
+            #1
+            {
+             order: 1;   
+            }
+            #2
+            {
+                order: 1; 
+            }
+            #3
+            {
+                order: 1; 
+            }
+            
+            .container3
+            {
+                background-color: rgb(100,100,100);
+                display: grid;
+                width: 40vw;
+                margin: auto;
+                grid-template-columns: 15vw 15vw;
+                grid-template-rows: 25vh 25vh;
+                grid-gap: 25px;
+                grid-template-areas: "top top" "bottomLeft bottomRight";
+                border: 2px solid rgb(247,182,96);
+                justify-content: center;
+                
+                
+                
+            }
+            
+
+      
+        .container4
+            {
+                display: grid;
+                width: 100%;
+                /*grid-template-columns: 300px 300px 200px;*/
+                grid-template-rows: 30px 50px 80px;
+                grid-gap: 15px;
+                margin: auto;
+                justify-content: center;
+                border: 2px solid rgb(247, 182, 96);
+            }
+        
+          .box6
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid red;
+                padding: 15px;
+            }
+             #4
+            {
+              grid-area: top;
+            }
+            #5
+            {
+                grid-area: bottomLeft;
+            }
+            #6
+            {
+                order: bottomRight; 
+            }
+       
+            
+            
+        </style>
+    </head>
+    <!-- -----------------------Remark------------------  -->
+    <center><h1>Spiffy WebPage</h1></center><br/><br/>
+    <u><h3>Personal Info</h3><br/></u>
+    <p style="color: brown;">
+        I'm <b style="color:rgb(10%,10%,240%);">Mazen Hazem</b> a <em style="color:#33cc33;">Computer Science</em> senior student at <strong style="font: bold;color:rgb(140,34,200);">AAST</strong> (Arab Academy For Science and Technology)<br/>                         
+       <br/>Specialized in: <text id="specialized"><strong><mark><text style="color: blue;">C++, PHP, SQL, HTML CSS, <text style="text-decoration: underline; color: black">Editing</text></text></mark></strong></text>
+    </p>
+    <br/>
+    <hr>
+    <u><Strong><h3>HERE WE ARE GOING TO DESCRIPE SOME THEORITICAL INFORMATION ABOUT HTML:</h3></Strong></u><br>
+    <p class="explanations"><b><lable class="lablenumbers">1-</lable><lable class="lablenames">WWW:</lable> Stands for World Wide Web ,is a collection of documents and other files. Most of the documents are made using Hypertext Markup Language (HTML).</b></p><br/>
+    <p class="explanations"><b><lable class="lablenumbers">2-</lable><lable class="lablenames">HTML:</lable> stands for Hypertext Markup Language. It's used to define the structure or layout of a web page.</b></p><br/>
+    <p class="explanations"><b><lable class="lablenumbers">3-</lable><lable class="lablenames">Markup:</lable> that tells the browser what that text should look like, Or how it's arranged.</b></p><br/>
+    <p class="explanations"><b><lable class="lablenumbers">4-</lable><lable class="lablenames">Whitespace: </lable> all whitespaces get collapsed into a single space when your <sup>Html page</sup> is rendered.</b></p><br/>
+    <p class="explanations"><b><lable class="lablenumbers">5-</lable><lable class="lablenames">Void elements: </lable> is the elements that don't have closing tags  <sub>(ex: breakline element, image elements)</sub>.</b></p><br/>
+    <p class="explanations"><b><lable class="lablenumbers">6-</lable><lable class="lablenames">Block elements: </lable>  Elements that do create a block like the invisible boxes around your paragraph<sub>ex:(&lt;p&gt;,&lt; div&gt;,&lt;video&gt;,&lt;ol&gt;,&lt;h1&gt;)</sub>.</b></p><br/>
+     <p class="explanations"><b><lable class="lablenumbers">7-</lable><lable class="lablenames">Inline Elements: </lable> Elements that don't create a block <sub>ex:(&lt;br&gt;,&lt;strong&gt;,&lt;a&gt;,&lt;img&gt;)</sub>.</b></p><br/>
+     <p class="explanations"><b><lable class="lablenumbers">8-</lable><lable class="lablenames">&lt;li&gt; element: </lable>this tag doesn't need to have a closing tag because it will never have a nested element inside it </b></p><br/>
+    <p class="explanations"><b><lable class="lablenumbers">9-</lable><lable class="lablenames">URL: </lable>Stands for Uniform resource locator, it's an address that tells your browser how to locate a particular resource (a file for instance) in a standardized way<sub> (ex: <a href="https://classroom.udacity.com/nanodegrees/nd001-mena-nfp1/parts/cdb1a188-690d-4643-b751-8ab5c408c919/modules/a3425edf-1ffa-44b6-b8b0-232ff99fdaab/lessons/07a3f870-8aa2-41d8-9a03-75d080cb78b7/concepts/66d0d6e2-2120-4906-8ebd-55d6ce0e58fe" target="_blank">Go to this lesson</a>)</sub></b></p>
+    <div style="border:0.1px solid red;">
+    <ul>
+    <li><em>UNIFORM</em> = Standardized
+    <li><em>Resource</em> = a file or other data object
+    <li><em>Locator</em> = address for finding things
+    </ul>
+    </div>
+    <br/>
+    <p class="explanations"><b><lable class="lablenumbers">8-</lable><lable class="lablenames">&lt;!DOCTYPE html&gt;: </lable>tells the broser that this file is going to be treated as modern html, this tag prevent bugs when your file is enlarged with codes and avoid reaching quircks mode</b></p><br/>
+    
+    <hr/>
+<!-- --------------------------------------V.I--------------------------------------wright the WIDTH and HEIGHT at the end of the url AS FOLLOWS--------------------------------------------V.I-----------------------------------------
+<img src="https://placebear.com/200/200" alt="A picture of a bear.">
+<br/>
+<img src="https://placekitten.com/800/500" alt="A picture of a kitten.">
+    -->
+    
+    <img src="https://placebear.com/150/150" />&nbsp;&nbsp;<img src="https://placekitten.com/150/150" />
+    
+    <hr/>
+    <h1>Difference between <em style="color:  darkred">div</em> and <em style="color:  darkred">span</em></h1><br/>
+    <u><h3 style="color:blue; background-color:yellow;">Click on the image of the span</h3></u>
+    <h2><em style="color:  darkred">div</em></h2>
+    <h3>Bear <div><img src="https://placebear.com/150/150"></div></h3><br/><br/>
+    <h2><em style="color:  darkred">span</em></h2>
+    <h3>Bear <span><a href="https://placebear.com/" target="_blank"><img  src="https://placebear.com/150/150" alt="image notfound"></a></span></h3>
+    
+    <br/>
+    <hr/>
+
+    <div class="fancybox">
+    This is a fancy Little box, isn't it?
+    </div> 
+        <div class="fancybox fancybox2">
+    Let's have another fancy box for the revolution!
+    
+        </div>
+<br/><br/><br/><br/><br/><br/><br/>
+    <hr/>
+    
+    <div class="container">
+    <div class="box red">Red</div>
+        <div class="box green" >Green</div>
+        <div class="box blue">Blue</div>
+    </div>
+    <hr/>
+    <br/>
+    <br/>
+    <div class="container2">
+        <div class="box5" id="1"> Box 1</div>
+        <div class="box5" id="2"> Box 2</div>
+        <div class="box5" id="3"> Box 3</div>
+        <div class="box5" > Box 4</div>
+        <div class="box5" > Box 5</div>
+    
+    </div>
+    
+        <hr/>
+    <br/>
+    <br/>
+    <div class="container3">
+      <div class="box6" id="4"> Box 4</div>
+        <div class="box6" id="5"> Box 5</div>
+        <div class="box6" id="6"> Box 6</div>
+    </div>
+    
+      <hr/>
+    <br/>
+    <br/>
+    <div class="container4">
+      <div class="box6" id="4"> Box 4</div>
+        <div class="box6" id="5"> Box 5</div>
+        <div class="box6" id="6"> Box 6</div>
+    </div>
+    
+     <hr/>
+    <br/>
+    <br/>
+  
+     
+    
+</html>
+
+<?php
+//echo "<br/> Hello World";
+ 
+?>
